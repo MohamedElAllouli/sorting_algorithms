@@ -35,8 +35,8 @@ void counting_sort(int *array, size_t size)
 	for (i = 0; i < size; i++)
 		if (array[i] > maximun)
 			maximun = array[i];
-	counter = _calloc(maximun + 1, sizeof(int));
-	tmp = _calloc(size + 1, sizeof(int));
+	counter = calloc_(maximun + 1, sizeof(int));
+	tmp = calloc_(size + 1, sizeof(int));
 	for (i = 0; i < size; i++)
 		counter[array[i]]++;
 	for (index = 1; index <= maximun; index++)
