@@ -29,7 +29,7 @@ listint_t *swap_help(listint_t **l, listint_t *node)
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *tmp_node;
-	
+
 	if (list == NULL || (*list)->next == NULL)
 		return;
 	tmp_node = (*list)->next;
