@@ -18,7 +18,7 @@ void shell_sort(int *array, size_t size)
 		for (i = knuth; i < size; i++)
 		{
 			t_mp = array[i];
-			for (i2 = i; j >= knuth && array[j - knuth] > t_mp; j -= knuth)
+			for (j = i; j >= knuth && array[j - knuth] > t_mp; j -= knuth)
 				array[j] = array[j - knuth];
 			array[j] = t_mp;
 		}
